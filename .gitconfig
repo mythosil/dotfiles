@@ -1,0 +1,22 @@
+[user]
+	name = mythosil
+	email = mythosil@yahoo.co.jp
+[core]
+	editor = vim
+[github]
+	user = mythosil
+[color]
+	ui = auto
+[alias]
+	ci = commit
+	co = checkout
+	tree = log --graph --all --decorate
+	init-shared = init --bare --shared
+	treeline = log --all --graph --decorate --oneline
+	br = branch
+	conf = config
+	st = status
+	d = diff
+	di = diff
+[log]
+	decorate = short
