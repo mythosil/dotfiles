@@ -1,0 +1,5 @@
+.zsh/completion
+.zsh/.zshrc.local
+.zsh/.zshenv.local
+.emacs.d
+.vim/bundle
