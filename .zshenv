@@ -6,23 +6,6 @@ PATH="$PATH:/opt/local/libexec/gnubin"
 PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 export PATH
 
-C_INCLUDE_PATH="$HOME/local/include:$C_INCLUDE_PATH"
-C_INCLUDE_PATH="$C_INCLUDE_PATH:/usr/local/include"
-C_INCLUDE_PATH="$C_INCLUDE_PATH:/opt/local/include"
-C_INCLUDE_PATH="$C_INCLUDE_PATH:/usr/local/mysql/include"
-export C_INCLUDE_PATH
-
-CPLUS_INCLUDE_PATH="$HOME/local/include:$CPLUS_INCLUDE_PATH"
-CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/local/include"
-CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/opt/local/include"
-CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:/usr/local/mysql/include"
-export CPLUS_INCLUDE_PATH
-
-LIBRARY_PATH="$HOME/local/lib:$LIBRARY_PATH"
-LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
-LIBRARY_PATH="$LIBRARY_PATH:/opt/local/lib"
-export LIBRARY_PATH
-
 PKG_CONFIG_PATH="$HOME/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/opt/local/lib/pkgconfig"
 PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig"
