@@ -3,6 +3,7 @@
 	email = mythosil@yahoo.co.jp
 [core]
 	editor = vim
+	autocrlf = input
 [github]
 	user = mythosil
 [color]
