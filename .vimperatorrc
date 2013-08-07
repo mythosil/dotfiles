@@ -1,0 +1,40 @@
+" the title of the browser window
+set titlestring=Vimperator
+
+" GUI elements
+set gui=nomenu,tabs,nonavigation,nobookmarks,noaddons
+
+" show the link in the status line
+set showstatuslinks=1
+
+" use visual bell instead of beeping on errors
+set visualbell
+
+" yahoo is the default search engine
+set defsearch=yahoo
+
+" highlight previous search pattern matches
+set hlsearch
+
+" ignore case in search patterns
+set ignorecase
+
+" incremental searching
+set incsearch
+
+" use alphabets to generate hint labels
+set hintchars="abcdefghijklmnopqrstuvwxyz"
+
+" don't focus any textbox after a page has loaded
+set focuscontent
+
+" number of the command-line history
+set history=500
+
+" step 3 times
+map j 3<C-e>
+map k 3<C-y>
+
+" notify loading finished
+echo "*** .vimperatorrc loaded ***"
+
