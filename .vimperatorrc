@@ -2,7 +2,7 @@
 set titlestring=Vimperator
 
 " GUI elements
-set gui=nomenu,tabs,nonavigation,nobookmarks,noaddons
+set gui=nomenu,tabs,navigation,nobookmarks,noaddons
 
 " show the link in the status line
 set showstatuslinks=1
