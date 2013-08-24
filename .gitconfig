@@ -21,3 +21,5 @@
 	di = diff
 [log]
 	decorate = short
+[pull]
+	rebase = true
