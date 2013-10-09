@@ -82,3 +82,6 @@ if [ -f ~/.zsh/.zshrc.local ]; then
   source ~/.zsh/.zshrc.local
 fi
 
+if [ -f ~/.zsh_function ]; then
+  source ~/.zsh_function
+fi

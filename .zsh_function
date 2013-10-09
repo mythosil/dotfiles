@@ -1,0 +1,30 @@
+
+# Launch simple http server
+#   - serve static files in the current directory
+#   - usage: http_server <port>
+#   - default port is 8888
+#   - require python 2.x or 3.x
+function http_server() {
+  local PORT=8888
+  if [ $# -ne 0 ]; then
+    expr $1 + 1 > /dev/null 2>&1
+    if [ $? -lt 2 ]; then
+      PORT=$1
+    else
+      echo "Usage: http_server <port>"
+      return 1
+    fi
+  fi
+
+  local PYVER=`python -V 2>&1 > /dev/null | cut -d' ' -f2`
+  if expr $PYVER : "2" > /dev/null; then
+    python -m SimpleHTTPServer $PORT
+  elif expr $PYVER : "3" > /dev/null; then
+    python -m http.server $PORT
+  fi
+}
+
+if [ -f ~/.zsh_function.local ]; then
+  source ~/.zsh_function.local
+fi
+
