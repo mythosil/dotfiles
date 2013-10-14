@@ -6,3 +6,7 @@
 --regex-scala=/^[ \t]*val[ \t]+([a-zA-Z0-9_]+)/\1/C,constants/ 
 --regex-scala=/^[ \t]*var[ \t]+([a-zA-Z0-9_]+)/\1/l,local variables/ 
 --regex-scala=/^[ \t]*package[ \t]+([a-zA-Z0-9_.]+)/\1/p,packages/ 
+
+--langmap=php:+.inc
+--php-kinds=cfd
+
