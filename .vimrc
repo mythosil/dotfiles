@@ -127,12 +127,12 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
 """ unite
-nnoremap <Leader>ub :<C-u>Unite buffer<CR>
-nnoremap <Leader>uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <Leader>ur :<C-u>Unite -buffer-name=register register<CR>
-nnoremap <Leader>uu :<C-u>Unite buffer file_mru<CR>
-nnoremap <Leader>us :<C-u>Unite snippet<CR>
-nnoremap <Leader>um :<C-u>Unite mark<CR>
+nnoremap <Space>ub :<C-u>Unite buffer<CR>
+nnoremap <Space>uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <Space>ur :<C-u>Unite -buffer-name=register register<CR>
+nnoremap <Space>uu :<C-u>Unite buffer file_mru<CR>
+nnoremap <Space>us :<C-u>Unite snippet<CR>
+nnoremap <Space>um :<C-u>Unite mark<CR>
 
 """ neocomplcache
 " Disable AutoComplPop. Comment out this line if AutoComplPop is not installed.
