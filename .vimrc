@@ -117,6 +117,7 @@ autocmd BufNewFile,BufRead *.erb set filetype=html
 autocmd BufNewFile,BufRead *.ctp set filetype=php
 autocmd BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
+autocmd BufNewFile,BufRead *.jelly set filetype=xml
 autocmd FileType perl compiler perl
 
 """ omni
