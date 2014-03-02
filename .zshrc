@@ -48,6 +48,7 @@ PROMPT="$PCOLOR o(・ε・)o $DEFAULT"
 PROMPT2="< | >"
 RPROMPT="%1(v|%F{green}%1v%f|)[%3~]" # (git-branch)[path]
 
+alias g='git'
 alias v='vim'
 alias e='emacs'
 alias l='ls -FCGB'
@@ -69,6 +70,7 @@ alias mysqlstop='sudo /usr/local/mysql/support-files/mysql.server stop'
 alias mysqlrestart='sudo /usr/local/mysql/support-files/mysql.server restart'
 alias memcachedstart='memcached -d -c 1024 -m 64 -p 11211'
 alias mongostart='$HOME/local/mongodb/bin/mongod --dbpath $HOME/.mongodata/'
+alias vboxrestart='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
 
 if [ `uname -s` = 'Darwin' -a -f ~/.zsh/.zshrc.darwin ]; then
   source ~/.zsh/.zshrc.darwin
