@@ -1,1 +1,1 @@
-set terminal x11
+set terminal aqua
