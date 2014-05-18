@@ -67,3 +67,7 @@ fi
 if [ -f ~/.zsh_alias ]; then
   source ~/.zsh_alias
 fi
+
+if [ -f ~/.zsh_abbreviation ]; then
+  source ~/.zsh_abbreviation
+fi
