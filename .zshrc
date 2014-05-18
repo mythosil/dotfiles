@@ -48,30 +48,6 @@ PROMPT="$PCOLOR o(・ε・)o $DEFAULT"
 PROMPT2="< | >"
 RPROMPT="%1(v|%F{green}%1v%f|)[%3~]" # (git-branch)[path]
 
-alias g='git'
-alias v='vim'
-alias e='emacs'
-alias l='ls -FCGB'
-alias ls='ls -FCGB'
-alias sl='ls -FCGB'
-alias la='ls -a'
-alias ll='ls -l'
-alias cp='cp -i'
-alias mv='mv -i'
-alias df='df -h'
-alias which='which -a'
-alias gdb='gdb -q'
-alias jar='jar -J-Dfile.encoding=UTF-8'
-alias javac='javac -J-Dfile.encoding=UTF-8'
-alias java='java -Dfile.encoding=UTF-8'
-alias clj='rlwrap -c clj'
-alias mysqlstart='sudo /usr/local/mysql/support-files/mysql.server start'
-alias mysqlstop='sudo /usr/local/mysql/support-files/mysql.server stop'
-alias mysqlrestart='sudo /usr/local/mysql/support-files/mysql.server restart'
-alias memcachedstart='memcached -d -c 1024 -m 64 -p 11211'
-alias mongostart='$HOME/local/mongodb/bin/mongod --dbpath $HOME/.mongodata/'
-alias vboxrestart='sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
-
 if [ `uname -s` = 'Darwin' -a -f ~/.zsh/.zshrc.darwin ]; then
   source ~/.zsh/.zshrc.darwin
 fi
@@ -86,4 +62,8 @@ fi
 
 if [ -f ~/.zsh_function ]; then
   source ~/.zsh_function
+fi
+
+if [ -f ~/.zsh_alias ]; then
+  source ~/.zsh_alias
 fi
