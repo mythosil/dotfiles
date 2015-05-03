@@ -24,3 +24,5 @@
 	decorate = short
 [pull]
 	rebase = true
+[ghq]
+  root = ~/git
