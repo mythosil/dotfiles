@@ -26,7 +26,6 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'tacroe/unite-mark'
 NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'taglist.vim'
@@ -198,10 +197,6 @@ imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
   \ "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
   \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-""" gist-vim
-let g:gist_clip_command = 'pbcopy'
-let g:gist_detect_filetype = 1
 
 """ key-mappings
 nnoremap <Esc><Esc> :nohlsearch<CR>
