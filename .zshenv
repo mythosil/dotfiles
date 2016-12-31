@@ -11,9 +11,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export JDK_HOME=`/usr/libexec/java_home -v 1.8`
 export JAVA_OPTS="-Dfile.encoding=UTF-8 -Dgroovy.source.encoding=UTF-8"
 export MAVEN_OPTS="-Dfile.encoding=UTF-8"
-#export GRADLE_HOME="/opt/local/share/java/gradle"
-#export GROOVY_HOME="/opt/local/share/java/groovy"
-#export SBT_OPTS="-XX:MaxPermSize=256m"
 
 export PYTHONSTARTUP="$HOME/.pythonrc.py"
 
