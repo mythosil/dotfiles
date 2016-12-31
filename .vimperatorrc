@@ -43,6 +43,9 @@ map <C-h> <BS>
 imap <C-h> <BS>
 omap <C-h> <BS>
 
+" prevent focusing on urlbox
+normal <esc>
+
 " notify loading finished
 echo "*** .vimperatorrc loaded ***"
 
