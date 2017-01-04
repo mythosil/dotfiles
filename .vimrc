@@ -30,7 +30,6 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'taglist.vim'
 NeoBundle 'sudo.vim'
-NeoBundle 'derekwyatt/vim-scala'
 
 """ filetype
 syntax on
@@ -104,8 +103,6 @@ highlight PmenuSel ctermbg=blue ctermfg=black
 """ skeleton
 autocmd BufNewFile *.c 0r $HOME/.vim/template/skeleton.c
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/skeleton.cpp
-autocmd BufNewFile *.pl 0r $HOME/.vim/template/skeleton.pl
-autocmd BufNewFile *.psgi 0r $HOME/.vim/template/skeleton.psgi
 autocmd BufNewFile *.py 0r $HOME/.vim/template/skeleton.py
 autocmd BufNewFile *.html 0r $HOME/.vim/template/skeleton.html
 autocmd BufNewFile *.html 0r $HOME/.vim/template/skeleton.xml
