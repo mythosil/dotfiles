@@ -1,4 +1,4 @@
-options(repos="http://cran.md.tsukuba.ac.jp");
+options(repos="https://cran.ism.ac.jp/");
 
 if(capabilities("aqua")) {
   options(device="quartz");
