@@ -1,0 +1,12 @@
+[
+  {
+    "key": "ctrl+w",
+    "command": "deleteWordLeft",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+backspace",
+    "command": "-deleteWordLeft",
+    "when": "editorTextFocus && !editorReadonly"
+  }
+]
