@@ -44,8 +44,8 @@ HISTFILE=~/.zsh_history
 
 local PCOLOR=$'%{\e[1;32m%}'
 local DEFAULT=$'%{\e[1;m%}'
-PROMPT="$PCOLOR o(・ε・)o $DEFAULT"
-PROMPT2="< | >"
+PROMPT="${PCOLOR}mythosil\$ ${DEFAULT}"
+PROMPT2="${PCOLOR} > ${DEFAULT}"
 RPROMPT="%1(v|%F{green}%1v%f|)[%3~]" # (git-branch)[path]
 
 if [ `uname -s` = 'Darwin' -a -f ~/.zsh/.zshrc.darwin ]; then
