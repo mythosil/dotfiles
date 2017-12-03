@@ -7,8 +7,7 @@
 export EDITOR="vim"
 export WORDCHARS="*?_-.[]~=&;!#$%(){}<>&lt;&gt;"
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-export JDK_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home -v 9`
 export JAVA_OPTS="-Dfile.encoding=UTF-8 -Dgroovy.source.encoding=UTF-8"
 export MAVEN_OPTS="-Dfile.encoding=UTF-8"
 
