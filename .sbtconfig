@@ -1,1 +1,0 @@
-SBT_OPTS="-Dfile.encoding=UTF-8 -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M ${SBT_OPTS}"
