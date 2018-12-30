@@ -18,6 +18,8 @@ if dein#load_state(s:dein_dir)
 
   call dein#add(s:dein_repo_dir)
   call dein#add('vim-scripts/taglist.vim')
+  call dein#add('plasticboy/vim-markdown')
+  call dein#add('leafgarland/typescript-vim')
 
   call dein#end()
   call dein#save_state()
@@ -105,7 +107,7 @@ autocmd BufNewFile *.c 0r $HOME/.vim/template/skeleton.c
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/skeleton.cpp
 autocmd BufNewFile *.py 0r $HOME/.vim/template/skeleton.py
 autocmd BufNewFile *.html 0r $HOME/.vim/template/skeleton.html
-autocmd BufNewFile *.html 0r $HOME/.vim/template/skeleton.xml
+autocmd BufNewFile *.xml 0r $HOME/.vim/template/skeleton.xml
 autocmd BufNewFile *.css 0r $HOME/.vim/template/skeleton.css
 
 """ filetype autocmd
@@ -142,3 +144,6 @@ inoremap <C-o> <ESC>o
 onoremap ) t)
 onoremap ( t(
 let mapleader = ','
+
+""" vim-markdown
+let g:vim_markdown_folding_disabled = 1
