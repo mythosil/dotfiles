@@ -1,32 +1,10 @@
 """""""""""""""""""""""""""
-" Last Modified: 2018/04/29
+" Last Modified: 2019/01/09
 " Author: mythosil
 """""""""""""""""""""""""""
 
 if &compatible
   set nocompatible
-endif
-
-""" dein
-let s:dein_dir = expand('~/.vim/bundle')
-let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
-
-execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
-
-if dein#load_state(s:dein_dir)
-  call dein#begin(s:dein_dir)
-
-  call dein#add(s:dein_repo_dir)
-  call dein#add('vim-scripts/taglist.vim')
-  call dein#add('plasticboy/vim-markdown')
-  call dein#add('leafgarland/typescript-vim')
-
-  call dein#end()
-  call dein#save_state()
-endif
-
-if dein#check_install()
-  call dein#install()
 endif
 
 filetype plugin indent on
