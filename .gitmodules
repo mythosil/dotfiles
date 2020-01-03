@@ -1,9 +1,3 @@
 [submodule ".vim/pack/plugins/start/taglist.vim"]
 	path = .vim/pack/plugins/start/taglist.vim
 	url = https://github.com/vim-scripts/taglist.vim.git
-[submodule ".vim/pack/plugins/start/vim-markdown"]
-	path = .vim/pack/plugins/start/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-[submodule ".vim/pack/plugins/start/typescript-vim"]
-	path = .vim/pack/plugins/start/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
