@@ -74,14 +74,6 @@ highlight DiffChange ctermfg=black ctermbg=3
 highlight DiffDelete ctermfg=black ctermbg=6
 highlight DiffText ctermfg=black ctermbg=7
 
-""" skeleton
-autocmd BufNewFile *.c 0r $HOME/.vim/template/skeleton.c
-autocmd BufNewFile *.cpp 0r $HOME/.vim/template/skeleton.cpp
-autocmd BufNewFile *.py 0r $HOME/.vim/template/skeleton.py
-autocmd BufNewFile *.html 0r $HOME/.vim/template/skeleton.html
-autocmd BufNewFile *.xml 0r $HOME/.vim/template/skeleton.xml
-autocmd BufNewFile *.css 0r $HOME/.vim/template/skeleton.css
-
 """ filetype autocmd
 autocmd BufNewFile,BufRead *.psgi set filetype=perl
 autocmd BufNewFile,BufRead *.ru set filetype=ruby
