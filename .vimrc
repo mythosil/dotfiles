@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""
-" Last Modified: 2019/01/09
+" Last Modified: 2020/01/03
 " Author: mythosil
 """""""""""""""""""""""""""
 
@@ -53,13 +53,7 @@ set splitbelow
 set splitright
 set wildmenu
 set visualbell
-
-""" cursor line
-augroup CursorLine
-  autocmd!
-  autocmd WinLeave * set nocursorline
-  autocmd WinEnter,BufRead * set cursorline
-augroup END
+set cursorline
 
 """ netrw
 let g:netrw_liststyle=3
