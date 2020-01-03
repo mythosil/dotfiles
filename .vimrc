@@ -75,20 +75,10 @@ highlight DiffDelete ctermfg=black ctermbg=6
 highlight DiffText ctermfg=black ctermbg=7
 
 """ filetype autocmd
-autocmd BufNewFile,BufRead *.psgi set filetype=perl
 autocmd BufNewFile,BufRead *.ru set filetype=ruby
 autocmd BufNewFile,BufRead *.erb set filetype=html
-autocmd BufNewFile,BufRead *.ctp set filetype=php
 autocmd BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy
-autocmd BufNewFile,BufRead *.jelly set filetype=xml
-autocmd FileType perl compiler perl
-augroup PhpIndent
-  autocmd!
-  autocmd BufNewFile,BufRead *.php set shiftwidth=4
-  autocmd BufNewFile,BufRead *.php set softtabstop=4
-  autocmd BufNewFile,BufRead *.php set tabstop=4
-augroup END
 
 """ omni
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
