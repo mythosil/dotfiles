@@ -19,6 +19,7 @@
 	st = status
 	d = diff
 	di = diff
+	unstage = reset HEAD
 	pom = push origin master
 [log]
 	decorate = short
