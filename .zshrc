@@ -1,10 +1,10 @@
 fpath=(~/.zsh/completion $fpath)
 
-autoload -U compinit
-compinit
+autoload -U compinit; compinit
 
-autoload -U promptinit
-promptinit
+autoload -U promptinit; promptinit
+PURE_GIT_PULL=0
+prompt pure
 
 bindkey -e
 bindkey '^R' history-incremental-pattern-search-backward
@@ -15,15 +15,6 @@ zle -N history-beginning-search-forward-end history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
-
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' formats '(%b)'
-zstyle ':vcs_info:*' actionformats '(%b|%a)'
-precmd () {
-  psvar=()
-  LANG=en_US.UTF-8 vcs_info
-  [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
-}
 
 setopt auto_cd
 setopt auto_pushd
@@ -41,12 +32,6 @@ setopt interactive_comments
 HISTSIZE=100000
 SAVEHIST=100000
 HISTFILE=~/.zsh_history
-
-local PCOLOR=$'%{\e[1;32m%}'
-local DEFAULT=$'%{\e[1;m%}'
-PROMPT="${PCOLOR}mythosil\$ ${DEFAULT}"
-PROMPT2="${PCOLOR} > ${DEFAULT}"
-RPROMPT="%1(v|%F{green}%1v%f|)[%3~]" # (git-branch)[path]
 
 if [ `uname -s` = 'Darwin' -a -f ~/.zsh/.zshrc.darwin ]; then
   source ~/.zsh/.zshrc.darwin
