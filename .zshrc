@@ -45,14 +45,14 @@ if [ -f ~/.zsh/.zshrc.local ]; then
   source ~/.zsh/.zshrc.local
 fi
 
-if [ -f ~/.zsh_function ]; then
-  source ~/.zsh_function
+if [ -f ~/.zsh/.zsh_function ]; then
+  source ~/.zsh/.zsh_function
 fi
 
-if [ -f ~/.zsh_alias ]; then
-  source ~/.zsh_alias
+if [ -f ~/.zsh/.zsh_alias ]; then
+  source ~/.zsh/.zsh_alias
 fi
 
-if [ -f ~/.zsh_abbreviation ]; then
-  source ~/.zsh_abbreviation
+if [ -f ~/.zsh/.zsh_abbreviation ]; then
+  source ~/.zsh/.zsh_abbreviation
 fi
