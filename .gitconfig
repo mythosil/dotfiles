@@ -1,6 +1,5 @@
 [user]
-	name = Akito Tabira
-	email = akito.tabira@gmail.com
+	useConfigOnly = true
 [core]
 	editor = vim
 	autocrlf = input
