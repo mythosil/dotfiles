@@ -67,6 +67,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-scripts/taglist.vim'
 Plug 'preservim/nerdtree'
 Plug 'mattn/emmet-vim'
+Plug 'mattn/webapi-vim'
 call plug#end()
 
 """ NERDTree
@@ -74,5 +75,6 @@ map <C-n>t :NERDTreeToggle<CR>
 map <C-n>c :NERDTreeCWD<CR>
 
 """ emmet-vim
+let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.vim/snippets/emmet/snippets.json')), "\n"))
 autocmd FileType html imap <buffer><expr><tab>
   \ emmet#isExpandable() ? "\<plug>(emmet-expand-abbr)" : "\<tab>"
