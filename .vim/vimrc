@@ -28,6 +28,7 @@ set formatoptions=tcqr
 set backspace=indent,eol,start
 set tags=./tags
 set whichwrap=b,s
+"set modelines=2
 
 """ ui
 set background=dark
@@ -53,7 +54,6 @@ highlight DiffText ctermfg=black ctermbg=7
 """ key-mappings
 nnoremap <Esc><Esc> :nohlsearch<CR>
 nnoremap <C-l> zz
-nnoremap <C-[> :pop<CR>
 inoremap <C-a> <ESC><S-i>
 inoremap <C-e> <ESC><S-a>
 inoremap <C-l> <ESC>
@@ -62,12 +62,16 @@ onoremap ) t)
 onoremap ( t(
 let mapleader = ','
 
+""" filetype
+autocmd BufReadPost *.kt setlocal filetype=kotlin
+
 """ vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'vim-scripts/taglist.vim'
 Plug 'preservim/nerdtree'
 Plug 'mattn/emmet-vim'
 Plug 'mattn/webapi-vim'
+Plug 'udalov/kotlin-vim'
 call plug#end()
 
 """ NERDTree
